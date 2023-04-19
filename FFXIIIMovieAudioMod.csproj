@@ -73,7 +73,7 @@
     <Compile Include="ProcessBin\ZlibLibrary.cs" />
     <Compile Include="ProcessWMPs\UnpackWMP.cs" />
     <Compile Include="ProcessWMPs\RepackWMP.cs" />
-    <Compile Include="TrackList.cs" />
+    <Compile Include="ProcessWMPs\TrackList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
