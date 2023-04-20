@@ -131,6 +131,8 @@ namespace FFXIIIMovieAudioMod
                     sw.WriteLine(ex);
                 }
 
+                Console.WriteLine("Crash details recorded in CrashLog.txt file");
+                Console.WriteLine("");
                 CmnMethods.ErrorExit(ex + "");
             }
         }

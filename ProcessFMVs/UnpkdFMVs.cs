@@ -52,6 +52,10 @@ namespace FFXIIIMovieAudioMod
                 }
             }
 
+            if (binkFMVsList.Count.Equals(0))
+            {
+                CmnMethods.ErrorExit("Missing movie files\nPlease check if you have correctly unpacked the game data with the Nova mod manager before running this installer.");
+            }
 
             var appAudioDir = Directory.GetCurrentDirectory() + "\\audio_data\\" + audioTrackdDirVo + "\\";
             string[] audioTracksDir = Directory.GetFiles(appAudioDir, "*.wav", SearchOption.AllDirectories);
@@ -115,7 +119,6 @@ namespace FFXIIIMovieAudioMod
                 }
             }
 
-            Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("Patching complete");
