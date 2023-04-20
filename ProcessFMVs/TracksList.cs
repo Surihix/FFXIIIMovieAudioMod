@@ -1,6 +1,6 @@
 ﻿namespace FFXIIIMovieAudioMod
 {
-    internal class TrackList
+    internal class TracksList
     {
         public static readonly string[] tracks_us = new string[]
         {

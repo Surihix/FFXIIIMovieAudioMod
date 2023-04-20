@@ -1,6 +1,6 @@
 ﻿namespace FFXIIIMovieAudioMod
 {
-    internal class WMPslist
+    internal class WMPsList
     {
         public static readonly string[] WMPs_us = new string[]
         {

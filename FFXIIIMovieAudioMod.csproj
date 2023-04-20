@@ -62,18 +62,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FindExe.cs" />
+    <Compile Include="ProcessFMVs\FMVsList.cs" />
+    <Compile Include="ProcessFMVs\UnpkdFMVs.cs" />
     <Compile Include="ProcessBin\StreamExtension.cs" />
-    <Compile Include="ProcessWMPs\BaseWMPs.cs" />
+    <Compile Include="ProcessFMVs\BaseWMPs.cs" />
     <Compile Include="CmnMethods.cs" />
     <Compile Include="Core.cs" />
-    <Compile Include="ProcessWMPs\HDModWMPs.cs" />
+    <Compile Include="ProcessFMVs\HDModWMPs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProcessBin\WhiteBin.cs" />
-    <Compile Include="ProcessWMPs\WMPslist.cs" />
+    <Compile Include="ProcessFMVs\WMPsList.cs" />
     <Compile Include="ProcessBin\ZlibLibrary.cs" />
-    <Compile Include="ProcessWMPs\UnpackWMP.cs" />
-    <Compile Include="ProcessWMPs\RepackWMP.cs" />
-    <Compile Include="ProcessWMPs\TrackList.cs" />
+    <Compile Include="ProcessFMVs\UnpackWMP.cs" />
+    <Compile Include="ProcessFMVs\RepackWMP.cs" />
+    <Compile Include="ProcessFMVs\TracksList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

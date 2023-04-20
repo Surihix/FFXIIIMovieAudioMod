@@ -34,9 +34,9 @@ namespace FFXIIIMovieAudioMod
                         CmnMethods.DirectoryExistsCheck(Directory.GetCurrentDirectory() + "\\audio_data\\us\\", "Audio folder for the selected voiceover is not present");
 
                         audioDirToCheck = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\audio_data\\us\\", "*.wav", SearchOption.AllDirectories);
-                        CmnMethods.CheckAudioTracks(audioDirToCheck, trackCheckList, TrackList.tracks_us);
+                        CmnMethods.CheckAudioTracks(audioDirToCheck, trackCheckList, TracksList.tracks_us);
 
-                        if (WMPslist.WMPs_us.Contains(currentWmpItemName))
+                        if (WMPsList.WMPs_us.Contains(currentWmpItemName))
                         {
                             wmpList.Add(currentWmpItemName);
                         }
@@ -49,9 +49,9 @@ namespace FFXIIIMovieAudioMod
                         CmnMethods.DirectoryExistsCheck(Directory.GetCurrentDirectory() + "\\audio_data\\jp\\", "Audio folder for the selected voiceover is not present");
 
                         audioDirToCheck = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\audio_data\\jp\\", "*.wav", SearchOption.AllDirectories);
-                        CmnMethods.CheckAudioTracks(audioDirToCheck, trackCheckList, TrackList.tracks_jp);
+                        CmnMethods.CheckAudioTracks(audioDirToCheck, trackCheckList, TracksList.tracks_jp);
 
-                        if (WMPslist.WMPs_jp.Contains(currentWmpItemName))
+                        if (WMPsList.WMPs_jp.Contains(currentWmpItemName))
                         {
                             wmpList.Add(currentWmpItemName);
                         }

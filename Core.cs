@@ -113,6 +113,10 @@ namespace FFXIIIMovieAudioMod
                     case WmpTypes.moddedHD:
                         HDModWMPs.Patch(whiteDataDir, movieDir, voCodeSwitch, radToolDir);
                         break;
+
+                    case WmpTypes.unpackedNova:
+                        UnpkdFMVs.NovaFMVs(movieDir, voCodeSwitch, radToolDir);
+                        break;
                 }
             }
             catch (Exception ex)
@@ -122,7 +126,7 @@ namespace FFXIIIMovieAudioMod
                     File.Delete("..\\CrashLog.txt");
                 }
 
-                using (var sw = new StreamWriter("..\\CrashLog.txt", append:true))
+                using (var sw = new StreamWriter("..\\CrashLog.txt", append: true))
                 {
                     sw.WriteLine(ex);
                 }
@@ -134,7 +138,8 @@ namespace FFXIIIMovieAudioMod
         enum WmpTypes
         {
             unmodded,
-            moddedHD
+            moddedHD,
+            unpackedNova
         }
     }
 }
